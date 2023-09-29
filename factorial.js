@@ -13,7 +13,7 @@
   rFact(6.8) = 720 (1*2*3*4*5*6)
 */
 
-const num1 = 3;
+const num1 = 8;
 const expected1 = 6;
 // Explanation: 1*2*3 = 6
 
