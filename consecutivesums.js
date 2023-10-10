@@ -35,11 +35,11 @@ output = [
 const consectutiveSum = (arr, k) => {
     let result = [] // variable to store the output
     //loop through the array elements
-    for (let i = 0; i < arr.length -1 ; i++) {
-        let current_sum = arr[0]; //resetting variables for each itteration of the loop 
+    for (let i = 0; i < arr.length; i++) {
+        let current_sum = 0; //resetting variables for each itteration of the loop 
         let current_group = [];
 
-        for (let j = i; j < arr.length-1; j++) {   //inner loop to find consecutive sums starting from index i
+        for (let j = i; j < arr.length; j++) {   //inner loop to find consecutive sums starting from index i
             current_sum += arr[j]
             current_group.push(arr[j])
             if  (current_sum === k) { //if the current sum equals k, add the current group to the results 
